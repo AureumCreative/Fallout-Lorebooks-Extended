@@ -245,36 +245,66 @@
            MOBILE NAVIGATION
            ========================================================= */
 
-        <nav class="mobile-nav">
+        .mobile-nav {
+            display: none;
+        }
 
-    <a href="https://janitorai.com/characters/0ee0141a-4640-4294-be0f-35c073a682dd_character-fallout-rpg-companions"
-       target="_blank"
-       rel="noopener noreferrer">
+        @media (max-width: 700px) {
 
-        <span class="mobile-icon">↩</span>
-        Fallout RPG
+            .floating-nav {
+                display: none;
+            }
 
-    </a>
+            .mobile-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
 
-    <a href="https://janitorai.com/profiles/be008f16-e767-433a-864f-81724d5cd3f6_profile-of-gold-annie?dicf=1"
-       target="_blank"
-       rel="noopener noreferrer">
+                width: 100%;
+                margin: 10px auto 0;
 
-        <span class="mobile-icon">✦</span>
-        GoldAnnie
+                gap: 6px;
+            }
 
-    </a>
+            .mobile-nav a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
 
-    <a href="https://ko-fi.com/aureumcreative"
-       target="_blank"
-       rel="noopener noreferrer">
+                padding: 6px 9px;
 
-        <span class="mobile-icon">♡</span>
-        Ko-fi
+                border: 1px solid var(--gold-border);
+                border-radius: 7px;
 
-    </a>
+                background: rgba(18, 24, 22, 0.88);
 
-</nav>
+                color: var(--gold-light);
+                text-decoration: none;
+
+                font-family: Georgia, serif;
+                font-size: 0.68rem;
+                font-weight: 600;
+
+                white-space: nowrap;
+
+                transition:
+                    background 0.2s ease,
+                    color 0.2s ease,
+                    border-color 0.2s ease;
+            }
+
+            .mobile-nav a:hover {
+                background: rgba(168, 117, 201, 0.10);
+                color: var(--cream);
+                border-color: var(--purple-muted);
+            }
+
+            .mobile-nav .mobile-icon {
+                color: var(--purple);
+                font-size: 0.8rem;
+            }
+        }
 
 
         /* =========================================================
@@ -1099,34 +1129,22 @@
                     Get the Package on Ko-fi
                 </a>
 
-               <nav class="mobile-nav">
+                <nav class="mobile-nav">
 
-    <a href="https://janitorai.com/characters/0ee0141a-4640-4294-be0f-35c073a682dd_character-fallout-rpg-companions"
-       target="_blank"
-       rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <span class="mobile-icon">↩</span>
+                        Link 1
+                    </a>
 
-        <span class="mobile-icon">↩</span>
-        Fallout RPG
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <span class="mobile-icon">✦</span>
+                        Link 2
+                    </a>
 
-    </a>
-
-    <a href="https://janitorai.com/profiles/be008f16-e767-433a-864f-81724d5cd3f6_profile-of-gold-annie?dicf=1"
-       target="_blank"
-       rel="noopener noreferrer">
-
-        <span class="mobile-icon">✦</span>
-        GoldAnnie
-
-    </a>
-
-    <a href="https://ko-fi.com/aureumcreative"
-       target="_blank"
-       rel="noopener noreferrer">
-
-        <span class="mobile-icon">♡</span>
-        Ko-fi
-
-    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <span class="mobile-icon">♡</span>
+                        Ko-fi
+                    </a>
 
                 </nav>
 
