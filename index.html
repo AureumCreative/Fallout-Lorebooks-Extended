@@ -366,18 +366,47 @@
             text-align: center;
         }
 
-        .creator-label {
-            margin-bottom: 12px;
 
-            color: var(--purple);
+/* =========================================================
+   CREATOR SIGNATURE
+   ========================================================= */
 
-            font-family: Arial, sans-serif;
-            font-size: 0.72rem;
-            font-weight: bold;
+.creator-signature {
+    position: absolute;
 
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-        }
+    right: 32px;
+    bottom: 24px;
+
+    z-index: 3;
+
+    color: var(--gold-light);
+
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+    font-style: italic;
+
+    letter-spacing: 0.04em;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.9),
+        0 0 16px rgba(0, 0, 0, 0.5);
+
+    opacity: 0.85;
+
+    pointer-events: none;
+}
+
+/* Mobile adjustment */
+
+@media (max-width: 600px) {
+    .creator-signature {
+        right: 18px;
+        bottom: 16px;
+
+        font-size: 0.78rem;
+    }
+}
+
 
         .hero-title {
             margin: 0;
