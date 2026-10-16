@@ -366,47 +366,17 @@
             text-align: center;
         }
 
-       
-/* =========================================================
-   CREATOR SIGNATURE
-   ========================================================= */
+        .creator-label {
+            margin-bottom: 12px;
 
-.creator-signature {
-    position: absolute;
+            color: var(--purple);
 
-    right: 32px;
-    bottom: 24px;
+            font-family: Arial, sans-serif;
+            font-size: 0.72rem;
+            font-weight: bold;
 
-    z-index: 3;
-
-    color: var(--gold-light);
-
-    font-family: Georgia, serif;
-    font-size: 0.9rem;
-    font-style: italic;
-
-    letter-spacing: 0.04em;
-
-    text-shadow:
-        0 2px 8px rgba(0, 0, 0, 0.9),
-        0 0 16px rgba(0, 0, 0, 0.5);
-
-    opacity: 0.85;
-
-    pointer-events: none;
-}
-
-/* Mobile adjustment */
-
-@media (max-width: 600px) {
-    .creator-signature {
-        right: 18px;
-        bottom: 16px;
-
-        font-size: 0.78rem;
-    }
-}
-
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
         }
 
         .hero-title {
@@ -1135,50 +1105,77 @@
          HERO
          ========================================================= -->
 
-    
-<section class="hero">
+    <section class="hero">
 
-    <img
+        <img
         class="hero-image"
         src="lorebooks-hero.png?v=2"
         alt="Extended Lorebook Package"
     >
 
-    <div class="hero-content">
+        <div class="hero-content">
 
-        <h1 class="hero-title">
-            Lorebooks Extended
-        </h1>
+            <div class="creator-label">
+                A GoldAnnie Creation
+            </div>
 
-        <div class="hero-subtitle">
-            An extended Fallout lorebook package
-        </div>
+            <h1 class="hero-title">
+                Lorebooks Extended
+            </h1>
 
-        <div class="divider">
-            <span>• • •</span>
-        </div>
+            <div class="hero-subtitle">
+                An extended Fallout lorebook package
+            </div>
 
-        <div class="purchase-area">
+            <div class="divider">
+                <span>• • •</span>
+            </div>
 
-            <a
-                class="purchase-button"
-                href="#"
-            >
-                Get the Package on Ko-fi
-            </a>
+            <div class="purchase-area">
 
-            <!-- Keep your existing mobile-nav here -->
+                <a
+                    class="purchase-button"
+                    href="#"
+                >
+                    Get the Package on Ko-fi
+                </a>
 
-        </div>
+                <nav class="mobile-nav">
 
-    </div>
+    <a href="https://janitorai.com/characters/0ee0141a-4640-4294-be0f-35c073a682dd_character-fallout-rpg-companions"
+       target="_blank"
+       rel="noopener noreferrer">
 
-    <div class="creator-signature">
+        <span class="mobile-icon">↩</span>
+        Fallout RPG
+
+    </a>
+
+    <a href="https://janitorai.com/profiles/be008f16-e767-433a-864f-81724d5cd3f6_profile-of-gold-annie?dicf=1"
+       target="_blank"
+       rel="noopener noreferrer">
+
+        <span class="mobile-icon">✦</span>
         GoldAnnie
-    </div>
 
-</section>
+    </a>
 
+    <a href="https://ko-fi.com/aureumcreative"
+       target="_blank"
+       rel="noopener noreferrer">
+
+        <span class="mobile-icon">♡</span>
+        Ko-fi
+
+    </a>
+
+</nav>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- =========================================================
