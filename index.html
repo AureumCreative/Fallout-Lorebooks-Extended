@@ -798,6 +798,8 @@ text-shadow:
             color: var(--gold-light);
         }
 
+        
+
 
         /* =========================================================
            BOT ENTRIES
@@ -1063,6 +1065,27 @@ text-shadow:
 .lorebook-entry-list .bot-meta {
     color: var(--cream);
 }
+
+        
+/* Two-column lorebook entry list */
+.lorebook-two-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+    row-gap: 24px;
+    align-items: start;
+}
+
+.lorebook-two-column > h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 650px) {
+    .lorebook-two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
 
         /* =========================================================
            FOOTER
