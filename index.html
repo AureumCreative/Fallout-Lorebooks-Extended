@@ -798,8 +798,6 @@ text-shadow:
             color: var(--gold-light);
         }
 
-        
-
 
         /* =========================================================
            BOT ENTRIES
@@ -1065,27 +1063,6 @@ text-shadow:
 .lorebook-entry-list .bot-meta {
     color: var(--cream);
 }
-
-        
-/* Two-column lorebook entry list */
-.lorebook-two-column {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 32px;
-    row-gap: 24px;
-    align-items: start;
-}
-
-.lorebook-two-column > h3 {
-    margin-top: 0;
-}
-
-@media (max-width: 650px) {
-    .lorebook-two-column {
-        grid-template-columns: 1fr;
-    }
-}
-
 
         /* =========================================================
            FOOTER
@@ -1934,13 +1911,11 @@ text-shadow:
                 Factions &amp; Locations Lorebook
             </summary>
 
-           <div class="section-content">
+            <div class="section-content">
 
-    <div class="lorebook-two-column">
-
-        <h3>
-            The Commonwealth Minutemen
-        </h3>
+                <h3>
+                    The Commonwealth Minutemen
+                </h3>
 
                 <ul class="feature-list">
 
@@ -2309,7 +2284,6 @@ text-shadow:
                 </ul>
 
 
- 
                 <h3>
                     Other Locations
                 </h3>
@@ -2328,15 +2302,16 @@ text-shadow:
 
                 </ul>
 
-            </div> <!-- End lorebook-two-column -->
+               </details>
 
-        </div> <!-- End section-content -->
+                    </div>
 
-    </details>
+        </details>
 
-</div>
+    </div>
 
 </details>
+
 
 
 
